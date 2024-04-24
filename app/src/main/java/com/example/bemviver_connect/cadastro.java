@@ -39,7 +39,7 @@ public class cadastro extends AppCompatActivity {
 
         ClasseCadastro cadastro1 = new ClasseCadastro(nome, email, senha);
 
-        Intent mudarTela2 = new Intent(getApplicationContext(), MainActivity.class);
+        Intent mudarTela2 = new Intent(getApplicationContext(), login.class);
         mudarTela2.putExtra("objeto1", (CharSequence) cadastro1);
         startActivity(mudarTela2);
 
@@ -47,7 +47,7 @@ public class cadastro extends AppCompatActivity {
 
     public void BotaoLogin (View view)
     {
-        Intent mudarTela = new Intent(getApplicationContext(), MainActivity.class);
+        Intent mudarTela = new Intent(getApplicationContext(), login.class);
         startActivity(mudarTela);
     }
 }
